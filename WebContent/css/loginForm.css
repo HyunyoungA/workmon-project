@@ -1,0 +1,138 @@
+@charset "UTF-8";
+
+* {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+a {
+	color: black;
+	text-decoration: none;
+}
+
+body {
+	position: initial;
+	height: 100%;
+	width: 100%;
+}
+
+#wrapper_login {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	flex-flow: column;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(0, 0, 0, 0.8);
+	background-image: url(../img/header-bg.jpg);
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+	background-position: center center;
+	background-size: cover;
+}
+
+#login_logo_wrap {
+	width: 364px;
+	margin-bottom: 2.5rem;
+	text-align: center;
+}
+
+#login_logo_wrap img {
+	cursor: pointer;
+}
+
+#login_From_wrap, #indi_comp_login_content_wrap {
+	display: flex;
+	flex-flow: row; /* 
+	margin-bottom:0.5rem; */
+}
+
+#login_From_wrap {
+	border-bottom: none;
+}
+
+#login_From_wrap div {
+	width: 100%;
+	padding: 1rem;
+	text-align: center;
+	cursor: pointer;
+	font-size: 17px;
+	font-weight: normal;
+	border-radius: 3px 3px 0 0;
+	border: 0.5px solid lightgray;
+	border-bottom: none;
+}
+
+#login_From_wrap div:hover {
+	background-color: rgba(0, 0, 0, 0.8);
+	color: white;
+	trasition: 0.8s all;
+}
+
+.flex_login_input {
+	display: flex;
+	flex-flow: column;
+	width: 100%;
+}
+
+.flex_login_input input {
+	background-color: transparent;
+	padding: 1.1rem 1rem;
+	border: none;
+	border-bottom: 0.5px solid lightgray;
+	font-size: 17px;
+}
+
+.flex_login_input button {
+	padding: 1rem 0;
+	border: 0;
+	height: 57px;
+	cursor: pointer;
+	color: white;
+	background-color: rgba(0, 0, 0, 0.7);
+	font-size: 17px;
+	border-radius: 3px;
+}
+
+#id_pass_find_join_Wrap {
+	display: flex;
+	flex-flow: row;
+	margin-top: 2.5rem;
+	justify-content: center;
+}
+
+#id_pass_find_join_Wrap div {
+	margin-right: 1rem;
+	font-size: 12px;
+}
+
+#id_pass_find_join_Wrap .margin_none {
+	margin-right: 0;
+}
+
+.check_login_Form_event {
+	background-color: rgba(0, 0, 0, 0.7);
+	color: white;
+}
+
+.check_login_Form_event:hover {
+	background-color: rgba(0, 0, 0, 1);
+	color: white;
+}
+
+.check_login_input_event {
+	display: none;
+}
+
+#bax_border_layout {
+	border: 1px solid lightgray;
+	padding: 70px;
+	border-radius: 5px;
+	background-color: rgba(255, 255, 255, 0.9)
+}

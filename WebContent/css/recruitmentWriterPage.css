@@ -1,0 +1,172 @@
+@charset "UTF-8";
+
+*, p, h1, h2, h3, h4, h5, h6, h7, div {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+a {
+	color: black;
+	text-decoration: none;
+}
+
+body {
+	position: initial;
+	width: 100%;
+	height: 100%;
+}
+
+#notice_detail_wrap {
+	margin: 12rem 0;
+}
+
+#notice_flex_box {
+	padding-top: 100px;
+	padding: 1rem;
+	margin: 0 auto;
+	max-width: 800px;
+	min-width: 300px;
+	height: 100%;
+}
+
+#notice_info_box {
+	border-bottom: 1px solid #6969692e;
+	text-align: center;
+	padding-bottom: 2rem;
+}
+
+.big {
+	width: 70%;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.readSumWrap_clear {
+	width: 60%;
+	max-width: 1000px;
+	margin: 0 auto;
+	/*  		border: 1px solid #000; */
+}
+
+.coName {
+	font-size: 15px;
+	font-weight: lighter;
+}
+
+.tbCol:first-child {
+	float: left;
+	width: 50%;
+	margin: 0;
+}
+
+.tbCol {
+	display: inline-block;
+	width: 50%;
+	margin: 0;
+}
+
+dt {
+	color: #999;
+	width: 52px;
+	vertical-align: middle;
+	display: inline-block;
+	font-size: 13px;
+	margin: 4px 0 5px;
+}
+
+dd {
+	color: #333;
+	width: 257px;
+	display: inline-block;
+	font-size: 13px;
+	margin: 4px 0 5px;
+}
+
+.tbCol_coLogo {
+	float: left;
+	display: table;
+	width: 250px;
+	height: 150px;
+	text-align: center;
+}
+
+.tbCol_coInfo {
+	position: relative;
+	display: flex;
+	width: 100%;
+	height: 100px;
+	justify-content: center;
+	align-items: center;
+}
+
+.tbList_1 {
+	text-align: center;
+}
+
+.tbList_1>dd {
+	width: 200px;
+	text-align: left;
+}
+
+.tbRow_clear_1 {
+	border: 1px solid black;
+}
+
+p {
+	margin: 40px;
+}
+
+.tbList_1>dt {
+	color: #999;
+	width: 100px;
+	vertical-align: top;
+	display: inline-block;
+	font-size: 13px;
+	margin: 4px 0 5px;
+}
+
+.supportDiv {
+	position: relative;
+	display: flex;
+	width: 100%;
+	height: 100px;
+	justify-content: center;
+	align-items: center;
+}
+
+.support {
+	width: 15%;
+	height: 50px;
+	margin: 20px 10px 20px 10px;
+	text-align: center;
+	background-color: #ffc800;
+	cursor: pointer;
+	border-radius: 10px;
+	border-style: none;
+}
+
+.hd_3 input {
+	margin-bottom: 5px;
+}
+
+.tbRow_clear>.tbCol>dl>dt:nth-child(2) {
+	width: 70%;
+}
+
+.tbRow_clear>.tbCol>dl>dt:nth-child(2)>input {
+	width: 100%;
+	padding: 0.3rem 0;
+}
+
+.tbRow_clear>.tbCol {
+	text-align: center;
+}
+
+.tbRow_clear>.tbCol>dl>dt:nth-of-child(1), .tbRow_clear>.tbCol>h4 {
+	text-align: left;
+}
+
+#compTitleInput {
+	width: 100%;
+}

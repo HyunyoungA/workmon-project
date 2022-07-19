@@ -1,0 +1,157 @@
+@charset "UTF-8";
+
+body, #mainNav {
+	min-width: 300px;
+}
+
+#join_menu_out_bg {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 9998;
+	background-color: rgba(0, 0, 0, 0.8);
+	display: none;
+}
+
+#join_menu_content_box h6 {
+	font-size: 1rem;
+}
+/* 회원가입 선택부 노란색 박스 크기조정 중간정렬 기타 등등 */
+#join_menu {
+	position: fixed;
+	top: 20%;
+	left: 25%;
+	right: 25%;
+	bottom: 20%;
+	margin: auto auto;
+	min-width: 200px;
+	min-height: 500px;
+	max-width: 700px;
+	z-index: 9999;
+	background: rgb(255, 200, 0);
+	border-radius: 20px;
+	padding: 1rem;
+	text-align: center;
+}
+
+#join_menu_cancel_box img {
+	cursor: pointer;
+	width: 5vw;
+	text-align: right;
+	max-width: 50px;
+	min-width: 10px;
+}
+
+#join_menu_cancel_box img:hover {
+	opacity: 0.5
+}
+
+#join_menu_cancel_box img {
+	width: 3.5vw;
+}
+
+#join_menu_logo_box {
+	background: center url("../img/portfolio/logo_toggle.png") no-repeat;
+	background-size: contain;
+	min-width: 100px;
+	min-height: 50px;
+	height: 12vh;
+	width: 100%;
+}
+
+#join_menu_content_box {
+	display: flex;
+	height: 68%;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-content: space-evenly;
+}
+
+#join_menu_indi_box, #join_menu_comp_box {
+	width: 35%;
+	height: 65%;
+	background-color: white;
+	border-radius: 10px;
+	background: white;
+	cursor: pointer;
+	padding: 1rem;
+}
+
+#join_menu_indi_box {
+	background: white url("../img/portfolio/individual_mem_basic.png")
+		no-repeat center center;
+	background-size: 75%;
+}
+
+#join_menu_comp_box {
+	background: white url("../img/portfolio/company_mem_basic.png")
+		no-repeat center center;
+	background-size: 75%;
+}
+
+#join_menu_indi_box:hover, #join_menu_comp_box:hover {
+	background-color: rgba(100, 100, 100, 0.7);
+	color: white;
+}
+
+#join_menu_indi_box:hover {
+	background: #00000099 url("../img/portfolio/individual_mem_hover.png")
+		no-repeat center center;
+	background-size: 75%;
+}
+
+#join_menu_comp_box:hover {
+	background: #00000099 url("../img/portfolio/company_mem_hover.png")
+		no-repeat center center;
+	background-size: 75%;
+}
+
+.container>input {
+	text-align: center;
+	height: 60px;
+	border-radius: 35px;
+	width: 60%;
+	margin: 0 auto;
+}
+
+@media ( min-width : 768px) {
+	#join_menu_logo_box {
+		width: 28vw;
+		height: 14vh;
+		width: 100%;
+	}
+	#join_menu_content_box {
+		flex-direction: column;
+	}
+}
+
+@media ( max-width : 768px) {
+	#join_menu h4 {
+		font-size: 3vw;
+		margin-bottom: 1.5rem;
+	}
+	#join_menu_content_box {
+		height: 72%;
+		flex-direction: row;
+	}
+	#join_menu_indi_box, #join_menu_comp_box {
+		width: 70%;
+		height: 35%;
+		margin: 1rem;
+		background-size: 50%;
+	}
+	#join_menu_content_box h6 {
+		font-size: 2vw;
+	}
+}
+
+@media ( max-width : 367px) {
+	#join_menu {
+		margin-left: -25px;
+	}
+	#join_menu_content_box {
+		height: 75%;
+	}
+}
